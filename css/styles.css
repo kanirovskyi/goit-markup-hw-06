@@ -841,6 +841,10 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.subscribe-input-style:focus {
+  outline: none;
+}
+
 .subscribe-button {
   display: flex;
   justify-content: center;
