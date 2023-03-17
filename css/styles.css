@@ -750,6 +750,10 @@ a {
   margin-right: 120px;
 }
 
+.footer-socialweb-box {
+  margin-right: 80px;
+}
+
 .footer-socialweb-box-title {
   font-weight: 500;
   line-height: 1.5;
@@ -815,4 +819,61 @@ a {
   background-color: var(--dark-color);
   font-size: 16px;
   line-height: 1.5;
+}
+
+.subscribe-area {
+  display: flex;
+}
+
+.subscribe-input-style {
+  box-sizing: border-box;
+  background: transparent;
+  margin-right: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 2;
+  width: 264px;
+  align-items: center;
+  letter-spacing: 0.04em;
+  padding: 8px 212px 8px 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+  background-color: var(--brand-color);
+  border-radius: 4px;
+
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--white-color);
+  text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button:is(:hover, :focus) {
+  background-color: var(--pressed-state);
+}
+
+.subscribe-icon {
+  fill: var(--white-color);
+}
+
+.subscribe-paragraf {
+  display: block;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--white-color);
+  margin-bottom: 16px;
 }
