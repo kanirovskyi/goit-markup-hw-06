@@ -427,7 +427,7 @@ label {
 }
 
 .input-style:focus + .modal-icon {
-  color: var(--brand-color);
+  fill: var(--brand-color);
 }
 
 textarea {
