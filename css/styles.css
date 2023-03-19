@@ -493,6 +493,32 @@ textarea::placeholder {
   color: var(--pressed-state);
 }
 
+.custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid var(--modal-overlay-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.checkbox-icon {
+  opacity: 0;
+  fill: #f4f4fd;
+}
+
+.checkbox-style:checked + .custom-checkbox .checkbox-icon {
+  opacity: 1;
+}
+
+.checkbox-style:checked ~ .custom-checkbox {
+  background: var(--brand-color);
+  border: 1.25px solid var(--brand-color);
+}
+
 /* ----------------Main page (Index) Block2 Preferences---------------- */
 
 .preference-contain {
