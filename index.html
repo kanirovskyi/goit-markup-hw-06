@@ -460,37 +460,68 @@
           </svg>
         </button>
 
+        <!--Modal Form-->
         <form class="contacts-input-form">
           <p class="contacts-input-form-paragraf">
             Leave your contacts and we will call you back
           </p>
-          <label class="modal-input-labels"
-            >Name
-            <input />
-          </label>
 
+          <!--Name-->
           <label class="modal-input-labels"
-            >Phone
-            <input />
-          </label>
-
-          <label class="modal-input-labels"
-            >Email
-            <input />
-          </label>
-
-          <label class="modal-input-labels"
-            >Comment
+            ><span class="modal-input-labels-text">Name</span>
             <input
-              type="textarea"
-              name="comment"
-              rows="5"
-              placeholder="Text input"
+              type="text"
+              name="username"
+              class="input-style"
+              required
+              autofocus
             />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-person"></use>
+            </svg>
           </label>
 
-          <input type="checkbox" name="accept" value="accept" />
-
+          <!--Phone-->
+          <label class="modal-input-labels"
+            ><span class="modal-input-labels-text">Phone</span>
+            <input type="phone" name="userphone" class="input-style" required />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <!--Email-->
+          <label class="modal-input-labels"
+            ><span class="modal-input-labels-text">Email</span>
+            <input type="email" name="usermail" class="input-style" required />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-email"></use>
+            </svg>
+          </label>
+          <!--Comment-->
+          <label class="modal-input-labels"
+            ><span class="modal-input-labels-text">Comment</span>
+            <textarea
+              name="comment"
+              placeholder="Text input"
+              class="textarea-style"
+              rows="5"
+            ></textarea>
+          </label>
+          <!--Checkbos Privat Policy-->
+          <label class="modal-checkbox-label">
+            <input
+              type="checkbox"
+              name="accept"
+              value="accept"
+              class="checkbox-style"
+              required
+            />
+            <span class="checkbox-text-style"
+              >I accept the terms and conditions of the
+              <a href="" class="private-policy-style">Privacy Policy</a></span
+            >
+          </label>
+          <!--Send Button-->
           <button type="send" class="modal-button-send">Send</button>
         </form>
       </div>
