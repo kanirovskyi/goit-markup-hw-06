@@ -369,15 +369,13 @@ a {
   line-height: 1.5;
   text-align: center;
   color: var(--dark-color);
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .contacts-input-form {
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 label {
@@ -389,6 +387,11 @@ label {
 .modal-input-labels {
   position: relative;
   margin-bottom: 8px;
+}
+
+.modal-input-textarea-label {
+  position: relative;
+  margin-bottom: 16px;
 }
 
 .modal-input-labels-text {
@@ -463,7 +466,6 @@ textarea::placeholder {
   flex-direction: row;
   align-items: center;
   margin-bottom: 24px;
-  margin-top: 8px;
 }
 
 .checkbox-style {
